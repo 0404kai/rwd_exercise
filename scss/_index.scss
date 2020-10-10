@@ -2,6 +2,10 @@ ul {
     padding: 0;
 }
 
+body {
+    font-family: 'Noto Sans', roboto, sans-serif;
+}
+
 .header a,
 .footer a {
     &:hover {
