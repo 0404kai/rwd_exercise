@@ -34057,6 +34057,10 @@ ul {
   padding: 0;
 }
 
+body {
+  font-family: "Noto Sans", roboto, sans-serif;
+}
+
 .header a:hover,
 .footer a:hover {
   color: #adb5bd;
