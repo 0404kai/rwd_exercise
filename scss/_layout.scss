@@ -1,0 +1,125 @@
+.header a,
+.footer a {
+    &:hover {
+        color: $gray-500;
+        transition: 0.5s;
+    }
+}
+
+.header {
+    @include i6 {
+        padding: 10px 16px;
+    }
+
+    li {
+        a {
+            color: $white;
+            font-size: $font-size-md;
+            padding: 32px 32px 32px 0;
+        }
+    }
+
+}
+
+.title {
+    @include text-hide;
+    background: center url(../images/index/logo.png);
+    background-size: cover;
+    width: 80px;
+    height: 48px;
+    display: block;
+
+    @include i6 {
+        width: 48px;
+        height: 30px;
+    }
+}
+
+.burger {
+    background: transparent;
+    border: none;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.burgerMenu {
+    background: #AA0601;
+    width: 0px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+
+    li {
+        padding: 16px 0 16px 16px;
+        text-align: center;
+        border-bottom: 1px solid $white;
+
+        a {
+            color: $white;
+        }
+    }
+
+    li:first-child {
+        padding: 10px 0 10px 16px;
+    }
+}
+
+.burgerActive {
+    width: 100%;
+}
+
+.footer {
+
+    a,
+    p,
+    span {
+        color: $white;
+    }
+
+    .footerNav {
+        @include iPad {
+            padding-right: 40px;
+        }
+    }
+
+    .community {
+        @include iPad {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    p {
+        @include iPad {
+            font-size: $font-size-md;
+        }
+
+        @include i6 {
+            font-size: $font-size-base;
+        }
+    }
+
+    .description {
+        @include iPad {
+            margin-right: 24px;
+        }
+    }
+
+    .footerIcon {
+        @include i6 {
+            margin-right: 24px;
+        }
+    }
+
+    .footerLogo {
+        background: url(../images/index/logo.png);
+        width: 46px;
+        height: 28px;
+        background-size: cover;
+    }
+}
