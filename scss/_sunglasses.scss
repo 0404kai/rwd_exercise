@@ -1,0 +1,88 @@
+.menuSecond {
+    border-bottom: 16px solid;
+
+    @include iPad {
+        border-bottom: 8px solid;
+    }
+
+    @include i6 {
+        border-bottom: 4px solid;
+    }
+}
+
+.sunglassesBanner1 {
+    background: center url(../images/sunglasses/banner-1.png);
+    width: 945px;
+    height: 309px;
+
+    @include iPad {
+        background: url(../images/sunglasses/banner-md-1.png);
+        margin-right: 0;
+    }
+
+    @include i6 {
+        background-size: cover;
+        width: 187.5px;
+        height: 144px;
+    }
+}
+
+.sunglassesBanner2 {
+    background: center url(../images/sunglasses/banner-2.png);
+    background-repeat: no-repeat;
+    width: 945px;
+    height: 309px;
+
+    @include iPad {
+        background: url(../images/sunglasses/banner-md-2.png);
+    }
+
+    @include i6 {
+        background-size: cover;
+        width: 187.5px;
+        height: 144px;
+    }
+}
+
+.productNew {
+    padding-bottom: 200px;
+
+    @include iPad {
+        padding-bottom: 30px;
+    }
+
+    h4,
+    p {
+        text-align: left;
+    }
+
+    h2 {
+        @include iPad {
+            font-size: $font-size-xl;
+            margin-bottom: 5px;
+        }
+
+        @include i6 {
+            font-size: $font-size-md;
+        }
+    }
+
+    h3 {
+        @include iPad {
+            font-size: $font-size-lg;
+        }
+
+        @include i6 {
+            font-size: $font-size-base;
+            margin-bottom: 20px;
+        }
+    }
+
+    li {
+        @include i6 {
+            margin-bottom: 32px;
+        }
+    }
+
+
+}

@@ -1,0 +1,129 @@
+.planning {
+    span {
+        @include iPad {
+            font-size: $font-size-base;
+        }
+    }
+
+    h2 {
+        @include iPad {
+            font-size: $font-size-xl;
+        }
+
+        @include i6 {
+            font-size: $font-size-md;
+            color: $blogtitle;
+        }
+    }
+
+    h3 {
+        @include i6 {
+            margin-bottom: 20px;
+        }
+
+        p {
+
+            @include iPad {
+                font-size: $font-size-base;
+            }
+
+            @include i6 {
+                font-size: $font-size-sm;
+            }
+
+        }
+    }
+
+    .planningMain {
+        li {
+            @include i6 {
+                margin-bottom: 24px;
+            }
+        }
+
+        li:last-child img {
+            @include i6 {
+                margin-bottom: 0;
+            }
+        }
+
+        img {
+            @include i6 {
+                margin-bottom: 16px;
+            }
+        }
+
+        p {
+            @include iPad {
+                font-size: $font-size-base;
+            }
+
+            @include i6 {
+                padding: 0;
+            }
+        }
+    }
+
+    .share {
+        @include i6 {
+            padding-bottom: 0;
+            margin-bottom: 8px;
+        }
+    }
+
+    .turn {
+        @include i6 {
+            width: 16px;
+            height: 14px;
+        }
+    }
+}
+
+
+.planningTitle {
+    @include i6 {
+        margin-bottom: 0;
+    }
+
+    a {
+        @include iPad {
+            font-size: $font-size-sm;
+        }
+    }
+}
+
+.tags {
+    img {
+        @include iPad {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    h4 {
+        @include iPad {
+            font-size: $font-size-md;
+        }
+    }
+
+    li,
+    span {
+        font-size: $font-size-lg;
+
+        @include iPad {
+            font-size: $font-size-base;
+        }
+    }
+
+    li {
+        @include iPad {
+            margin-bottom: 0;
+        }
+    }
+
+    span {
+        @include iPad {
+            margin-left: 16px;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.problem {
+    background: center url(../images/problem/help.png);
+    background-size: cover;
+    width: 58px;
+    height: 58px;
+
+    @include iPad {
+        width: 48px;
+        height: 48px;
+    }
+
+    @include i6 {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.problemMain {
+    h3 {
+        @include i6 {
+            font-size: $font-size-md;
+        }
+    }
+
+    h4 {
+        @include i6 {
+            font-size: $font-size-base;
+        }
+    }
+
+    li {
+        @include i6 {
+            margin-bottom: 20px;
+        }
+    }
+
+
+    p {
+        @include iPad {
+            margin-left: 40px;
+        }
+
+        @include i6 {
+            font-size: $font-size-sm;
+            margin-left: 0;
+        }
+    }
+}

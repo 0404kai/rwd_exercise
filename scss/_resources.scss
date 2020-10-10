@@ -1,0 +1,59 @@
+body {
+    line-height: 1.5;
+}
+
+.resources {
+    .color {
+        li {
+            text-align: center;
+
+            .example1 {
+                background-color: #fbf2f2;
+                width: 126px;
+                height: 126px;
+            }
+
+            .example2 {
+                background-color: #111619;
+                width: 126px;
+                height: 126px;
+            }
+
+            .example3 {
+                background-color: #aa0601;
+                width: 126px;
+                height: 126px;
+            }
+        }
+    }
+
+    .icon {
+        .iconLittle {
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        .iconBig {
+            img {
+                margin-right: 20px;
+            }
+
+            .fb {
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .logo {
+        .bgLogo {
+            background-color: $black;
+        }
+
+        li {
+            a {
+                padding: 8px 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,449 @@
+ul {
+    padding: 0;
+}
+
+.header a,
+.footer a {
+    &:hover {
+        color: $gray-500;
+        transition: 0.5s;
+    }
+}
+
+.header {
+    @include i6 {
+        padding: 10px 16px;
+    }
+
+    li {
+        a {
+            color: $white;
+            font-size: $font-size-md;
+            padding: 32px 32px 32px 0;
+        }
+    }
+
+}
+
+.title {
+    @include text-hide;
+    background: center url(../images/index/logo.png);
+    background-size: cover;
+    width: 80px;
+    height: 48px;
+    display: block;
+
+    @include i6 {
+        width: 48px;
+        height: 30px;
+    }
+}
+
+.burger {
+    background: transparent;
+    border: none;
+
+    &:focus {
+        outline: 0;
+    }
+}
+
+.burgerMenu {
+    background: #AA0601;
+    width: 0px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    transition: all 0.3s;
+
+    li {
+        padding: 16px 0 16px 16px;
+        text-align: center;
+        border-bottom: 1px solid $white;
+
+        a {
+            color: $white;
+        }
+    }
+
+    li:first-child {
+        padding: 10px 0 10px 16px;
+    }
+}
+
+.burgerActive {
+    width: 100%;
+}
+
+.banner {
+    background: center url(../images/index/banner.png);
+    height: 840px;
+
+    @include iPad {
+        background: center url(../images/index/banner-sm.png);
+        background-size: cover;
+
+        h2 {
+            font-size: $font-size-md;
+        }
+
+        h3 {
+            font-size: $font-size-48;
+        }
+
+    }
+
+    @include i6 {
+        height: 394px;
+
+        h2 {
+            font-size: $font-size-base;
+        }
+
+        h3 {
+            font-size: $font-size-xl;
+        }
+    }
+}
+
+.introduction {
+    @include i6 {
+        padding: 32px 0;
+    }
+
+    h2 {
+        @include i6 {
+            font-size: $font-size-lg;
+            margin-bottom: 20px;
+        }
+    }
+
+    li {
+        @include iPad {
+            padding: 0 65px;
+        }
+
+        @include i6 {
+            padding: 0 70px;
+        }
+
+        img {
+            margin-bottom: 40px;
+
+            @include iPad {
+                margin-bottom: 16px;
+            }
+        }
+
+        p {
+            text-align: left;
+            margin-top: 4px;
+        }
+    }
+
+}
+
+.main {
+    h2 {
+        text-align: center;
+
+        @include iPad {
+            font-size: $font-size-xl;
+            margin: 20px 0;
+        }
+
+        @include i6 {
+            font-size: $font-size-md;
+        }
+    }
+
+    ul {
+        @include iPad {
+            margin-bottom: 40px;
+        }
+    }
+
+    li {
+        @include iPad {
+            margin-bottom: 8px;
+        }
+
+        @include i6 {
+            position: relative;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                position: absolute;
+            }
+        }
+
+        .photo {
+            width: 635px;
+
+            @include iPad {
+                width: 60%;
+            }
+
+            @include i6 {
+                width: 100%;
+            }
+        }
+    }
+
+    span {
+        color: $primary;
+
+        @include iPad {
+            font-size: $font-size-28;
+        }
+
+        @include i6 {
+            color: $white;
+        }
+
+    }
+
+    .optical {
+        background: url(../images/index/list1.png);
+        background-size: cover;
+        width: 32px;
+        height: 26px;
+
+        @include i6 {
+            background: url(../images/index/i6-1.png);
+        }
+    }
+
+    .sunglasses {
+        background: url(../images/index/sun.png);
+        width: 32px;
+        height: 32px;
+        background-size: cover;
+
+        @include i6 {
+            background: url(../images/index/i6-2.png);
+        }
+    }
+
+    .functional {
+        background: url(../images/index/list5.png);
+        width: 23px;
+        height: 32px;
+        background-size: cover;
+
+        @include i6 {
+            background: url(../images/index/i6-3.png);
+        }
+    }
+}
+
+.jointName {
+    background: center url(../images/index/bg.png);
+    background-size: cover;
+
+    @include iPad {
+        padding: 40px 0 0 0;
+    }
+
+    ul {
+        @include i6 {
+            padding-bottom: 40px;
+        }
+    }
+
+    h2 {
+        @include iPad {
+            font-size: $font-size-xl;
+        }
+
+        @include i6 {
+            font-size: $font-size-md;
+        }
+    }
+
+    .bgColor {
+        background-color: #fff;
+
+        img {
+            opacity: 0.5;
+        }
+    }
+
+    li {
+        position: relative;
+
+        p {
+            position: absolute;
+            top: 40%;
+            left: 20%;
+
+            @include iPad {
+                font-size: $font-size-xl;
+                left: 30%;
+            }
+        }
+
+        .youth {
+            left: 30%;
+
+            @include iPad {
+                left: 35%;
+            }
+        }
+    }
+}
+
+.recommend {
+    h2 {
+        @include iPad {
+            font-size: $font-size-xl;
+            padding-top: 40px;
+        }
+    }
+
+    ul {
+        @include iPad {
+            margin-bottom: 0px;
+        }
+    }
+
+    img {
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        margin-bottom: 8px;
+    }
+
+    li {
+        @include iPad {
+            margin-bottom: 28px;
+        }
+
+        @include i6 {
+            margin-bottom: 16px;
+        }
+    }
+}
+
+.connection {
+    max-width: 714px;
+    margin: 0 auto;
+
+    @include iPad {
+        width: 55%;
+    }
+
+    @include i6 {
+        width: 80%;
+    }
+
+    h2 {
+        @include iPad {
+            font-size: $font-size-xl;
+        }
+    }
+
+    p {
+        @include iPad {
+            font-size: $font-size-base;
+        }
+    }
+
+    form {
+        @include i6 {
+            padding-bottom: 32px;
+        }
+    }
+
+    input,
+    textarea {
+        border: 1px solid #000;
+        padding: 15px 0 15px 16px;
+        background-color: transparent;
+        margin-bottom: 16px;
+
+        @include iPad {
+            padding: 8px 0 8px 16px;
+        }
+    }
+
+    ::placeholder {
+        opacity: 0.2;
+    }
+
+    .check {
+        width: 24px;
+    }
+
+    .checkText {
+        @include iPad {
+            font-size: $font-size-sm;
+        }
+    }
+
+    button {
+        padding: 16px 100px;
+        border: none;
+        margin: 0 auto;
+
+        @include iPad {
+            font-size: $font-size-sm;
+            padding: 8px 76px;
+        }
+    }
+}
+
+.footer {
+
+    a,
+    p,
+    span {
+        color: $white;
+    }
+
+    .footerNav {
+        @include iPad {
+            padding-right: 40px;
+        }
+    }
+
+    .community {
+        @include iPad {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    p {
+        @include iPad {
+            font-size: $font-size-md;
+        }
+
+        @include i6 {
+            font-size: $font-size-base;
+        }
+    }
+
+    .description {
+        @include iPad {
+            margin-right: 24px;
+        }
+    }
+
+    .footerIcon {
+        @include i6 {
+            margin-right: 24px;
+        }
+    }
+
+    .footerLogo {
+        background: url(../images/index/logo.png);
+        width: 46px;
+        height: 28px;
+        background-size: cover;
+    }
+}

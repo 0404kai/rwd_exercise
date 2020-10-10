@@ -1,0 +1,226 @@
+.menu {
+    max-width: 1386px;
+    margin: 0 auto;
+
+    li {
+        width: 100%;
+
+        .menuFirst {
+            border-bottom: 16px solid;
+
+            @include iPad {
+                border-bottom: 8px solid;
+            }
+
+            @include i6 {
+                border-bottom: 4px solid;
+            }
+        }
+
+        a:hover {
+            border-bottom: 16px solid;
+
+            @include iPad {
+                border-bottom: 8px solid;
+            }
+
+            @include i6 {
+                border-bottom: 4px solid;
+            }
+        }
+    }
+
+    a {
+        @include iPad {
+            padding-top: 16px;
+            padding-bottom: 8px;
+        }
+
+        @include i6 {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+    }
+
+    p {
+        @include iPad {
+            font-size: $font-size-28;
+        }
+
+        @include i6 {
+            font-size: $font-size-sm;
+        }
+    }
+
+    .menuList1 {
+        background: url(../images/optical/list1.png);
+        background-repeat: no-repeat;
+        width: 48px;
+        height: 38px;
+
+        @include iPad {
+            width: 32px;
+            height: 25px;
+            background-size: cover;
+        }
+
+        @include i6 {
+            width: 15px;
+            height: 12px;
+            margin-right: 4px;
+        }
+    }
+
+    .menuList2 {
+        background: url(../images/optical/list2.png);
+        background-repeat: no-repeat;
+        width: 48px;
+        height: 48px;
+
+        @include iPad {
+            width: 32px;
+            height: 32px;
+            background-size: cover;
+        }
+
+        @include i6 {
+            width: 14px;
+            height: 15px;
+            margin-right: 4px;
+        }
+    }
+
+    .menuList3 {
+        background: url(../images/optical/list3.png);
+        background-repeat: no-repeat;
+        width: 36px;
+        height: 48px;
+
+        @include iPad {
+            width: 23px;
+            height: 32px;
+            background-size: cover;
+        }
+
+        @include i6 {
+            width: 11px;
+            height: 15px;
+            margin-right: 4px;
+        }
+    }
+}
+
+.OSmargin {
+    @include iPad {
+        margin-bottom: 40px;
+    }
+
+    @include i6 {
+        margin-bottom: 32px;
+    }
+}
+
+.opticalBanner1 {
+    background: center url(../images/optical/banner-1.png);
+    width: 945px;
+    height: 309px;
+
+    @include iPad {
+        background: url(../images/optical/banner-md-1.png);
+        margin-right: 0;
+    }
+
+    @include i6 {
+        background-size: cover;
+        width: 187.5px;
+        height: 144px;
+    }
+}
+
+.opticalBanner2 {
+    background: center url(../images/optical/banner-2.png);
+    width: 945px;
+    height: 309px;
+
+    @include iPad {
+        background: url(../images/optical/banner-md-2.png);
+    }
+
+    @include i6 {
+        background-size: cover;
+        width: 187.5px;
+        height: 144px;
+    }
+
+}
+
+.product {
+    padding-bottom: 150px;
+
+    @include i6 {
+        padding-bottom: 30px;
+    }
+
+    h2 {
+        @include iPad {
+            font-size: $font-size-xl;
+            margin-bottom: 5px;
+        }
+
+        @include i6 {
+            font-size: $font-size-md;
+        }
+    }
+
+    h3 {
+        @include iPad {
+            font-size: $font-size-lg;
+        }
+
+        @include i6 {
+            font-size: $font-size-base;
+            margin-bottom: 20px;
+        }
+    }
+
+    li {
+        @include i6 {
+            margin-bottom: 32px;
+        }
+    }
+
+}
+
+.mirrorColor {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+}
+
+.pages {
+    li {
+        border: 1px solid #000;
+
+        a {
+            display: block;
+            font-size: $font-size-md;
+            padding: 12px 16px;
+
+            @include i6 {
+                font-size: $font-size-12;
+                padding: 6px 10px;
+            }
+
+            &:hover {
+                background-color: $black;
+                color: $white;
+            }
+        }
+
+        &:nth-child(3) a {
+            background-color: $black;
+            color: $white;
+        }
+    }
+
+}

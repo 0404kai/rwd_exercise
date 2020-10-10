@@ -1,0 +1,100 @@
+.blogNav {
+    a {
+        @include iPad {
+            font-size: $font-size-base;
+        }
+
+        @include i6 {
+            padding-right: 24px;
+        }
+    }
+
+    li:last-child a {
+        @include i6 {
+            padding-right: 0;
+        }
+    }
+}
+
+.blogPhoto1,
+.blogPhoto2,
+.blogPhoto3,
+.blogPhoto4,
+.blogPhoto5 {
+    width: 635px;
+    height: 400px;
+
+    @include iPad {
+        width: 330px;
+        height: 191px;
+    }
+
+    @include i6 {
+        width: 345px;
+        height: 193px;
+        margin-top: 24px;
+        margin-bottom: 8px;
+    }
+}
+
+.blogPhoto1 {
+    background: center url(../images/blog/blog-1.png);
+    background-size: cover;
+}
+
+.blogPhoto2 {
+    background: center url(../images/blog/blog-2.png);
+    background-size: cover;
+}
+
+.blogPhoto3 {
+    background: center url(../images/blog/blog-3.png);
+    background-size: cover;
+}
+
+.blogPhoto4 {
+    background: center url(../images/blog/blog-4.png);
+    background-size: cover;
+}
+
+.blogPhoto5 {
+    background: center url(../images/blog/blog-5.png);
+    background-size: cover;
+}
+
+.blog {
+    ul {
+        @include i6 {
+            margin-bottom: 24px;
+        }
+    }
+
+    li {
+        @include iPad {
+            margin-bottom: 32px;
+        }
+
+        @include i6 {
+            margin-bottom: 0;
+        }
+    }
+
+    h3 {
+        @include iPad {
+            font-size: $font-size-md;
+        }
+    }
+
+    h4 {
+        @include iPad {
+            font-size: $font-size-base;
+        }
+    }
+
+    p,
+    span {
+        @include iPad {
+            font-size: $font-size-sm;
+        }
+    }
+}

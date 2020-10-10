@@ -1,0 +1,46 @@
+.mb200 {
+    margin-bottom: 200px;
+
+    @include iPad {
+        margin-bottom: 80px;
+    }
+
+    @include i6 {
+        margin-bottom: 30px;
+    }
+}
+
+.branch {
+    background: center url(../images/store-location/list1.png);
+    width: 445px;
+    height: 224px;
+
+    @include iPad {
+        width: 330px;
+        height: 164px;
+    }
+}
+
+.map {
+    background: center url(../images/store-location/map.png);
+    width: 635px;
+    height: 422px;
+
+    @include iPad {
+        width: 690px;
+        height: 465px;
+    }
+
+    @include i6 {
+        width: 345px;
+        height: 227px;
+    }
+}
+
+.branchName {
+
+    @include iPad {
+        font-size: $font-size-base;
+    }
+
+}
