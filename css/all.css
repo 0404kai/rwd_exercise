@@ -35118,6 +35118,10 @@ body {
     padding: 0;
   }
 }
+.planning .share img:hover {
+  transform: scale(1.2);
+  transition: all 0.3s;
+}
 @media (max-width: 375px) {
   .planning .share {
     padding-bottom: 0;
@@ -35129,6 +35133,10 @@ body {
     width: 16px;
     height: 14px;
   }
+}
+.planning .turnPage:hover {
+  transform: scale(1.1);
+  transition: all 0.3s;
 }
 
 @media (max-width: 375px) {
