@@ -5,19 +5,7 @@
     li {
         width: 100%;
 
-        .menuFirst {
-            border-bottom: 16px solid;
-
-            @include iPad {
-                border-bottom: 8px solid;
-            }
-
-            @include i6 {
-                border-bottom: 4px solid;
-            }
-        }
-
-        a:hover {
+        .menuFirst,a:hover {
             border-bottom: 16px solid;
 
             @include iPad {
