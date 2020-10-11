@@ -12,6 +12,7 @@
 
 .sunglassesBanner1 {
     background: center url(../images/sunglasses/banner-1.png);
+    background-size: cover;
     width: 945px;
     height: 309px;
 
@@ -29,7 +30,7 @@
 
 .sunglassesBanner2 {
     background: center url(../images/sunglasses/banner-2.png);
-    background-repeat: no-repeat;
+    background-size: cover;
     width: 945px;
     height: 309px;
 
@@ -49,11 +50,6 @@
 
     @include iPad {
         padding-bottom: 30px;
-    }
-
-    h4,
-    p {
-        text-align: left;
     }
 
     h2 {
