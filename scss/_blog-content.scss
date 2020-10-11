@@ -65,6 +65,12 @@
     }
 
     .share {
+        img{
+        &:hover{
+            transform: scale(1.2);
+            transition: all 0.3s;
+        }
+    }
         @include i6 {
             padding-bottom: 0;
             margin-bottom: 8px;
@@ -76,6 +82,10 @@
             width: 16px;
             height: 14px;
         }
+    }
+    .turnPage:hover{
+        transform: scale(1.1);
+        transition: all 0.3s;
     }
 }
 
